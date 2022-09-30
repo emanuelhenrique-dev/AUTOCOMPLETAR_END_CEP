@@ -1,0 +1,48 @@
+:root {
+  --bg-color: #04044c;
+  --secondary-bg-color: #494a7d;
+  --primary-color: #fff;
+  --secondary-color: #25cc88;
+  --text-color: #8789af;
+  --border-color: #20235b;
+}
+
+/* body */
+#checkout-page {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+/* Message */
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#message {
+  width: 40%;
+}
+
+.alert.alert-light p {
+  border-bottom: 1px solid #333;
+  padding: 1.2em 0;
+}
+
+
+/* o simbolo de carregamento */
+#fade .spinner-border {
+  width: 60px;
+  height: 60px;
+}
+
+.hide {
+  display: none !important;
+}
