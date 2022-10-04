@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autocomplete Enderenço pelo cpf</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/js/scripts.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/scripts.js" defer></script>
 
     <!--  Bootstrap  -->
     <link
@@ -26,13 +26,15 @@
       <div id="loader" class="spinner-border text-info hide" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
-      <div id="message" class="">
+      <div id="message" class="hide">
         <div class="alert alert-light" role="alert">
           <h4>Mensagem:</h4>
-          <p></p>
-          <button id="close-message" type="button" class="btn btn-secondary">
-            Fechar
-          </button>
+          <p>Endereço salvo com sucesso!</p>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="close-message" type="button" class="btn btn-secondary">
+              Fechar
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -65,9 +67,9 @@
               id="cep"
               name="cep"
               placeholder="Digite o seu CEP"
+              required
               maxlength="8"
               minlength="8"
-              required
             />
             <label for="cep">Digite o seu CEP</label>
           </div>
